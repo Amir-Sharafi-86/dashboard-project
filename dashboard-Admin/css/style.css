@@ -17,6 +17,15 @@ body{
     background-color: var(--color_light_gray);
 }
 
+ul {
+	list-style-type: none;
+
+}
+
+a {
+	text-decoration: none;
+}
+
 /* colors light */
 :root{
     --color_white:#fff;
@@ -109,21 +118,22 @@ main{
 	font-weight: 700;
 }
 
-.row-aside__elem {
-	background-color: var(--color_blue);
-	border-radius: 10px;
-	height: 50px;
-	width: 196px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	column-gap: 20px;
-
+.item-sidebar {
+	margin-bottom: 32px ;
 
 }
-.row-aside__elem span {
-	color: var(--color_light_gray);
+
+.item-sidebar__link {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
 	font-family: "Raleway";
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 14px;
+	color: var(--color_black);
+}
+
+.active__sidebdar {
+	background-color: #3A6FF8;
+	padding: 12px 18px 6px 12px;
 }
