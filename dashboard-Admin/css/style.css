@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Raleway;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: 100px 100vh;
+    grid-template-areas: "aside header" "aside main";
+    background-color: var(--color_light_gray);
+}
+
+/* colors light */
+:root{
+    --color_white:#fff;
+    --color_black:#1A2029;
+    --color_gray:#14161D;
+    --color_light_gray:#F8F8F8;
+    --color_dark_gray:#31353F;
+    --color_light_purple:#8C77ED;
+    --color_blue:#3A6FF8;
+    --color_green:#1ECB4F;
+    --color_light_red:#F46D22;
+}
+
+
+/* colors dark */
+:root[data-theme="dark"] {
+    --color_white:#cb0909;
+}
+
+h1{
+    color: var(--color_white);
+}
+
+@font-face {
+    font-family: Raleway;
+    font-weight: 900;
+    font-style: normal;
+    src: url('../fonts/Raleway/Raleway-Black.woff') format('woff');
+}
+@font-face {
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Raleway/Raleway-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: Raleway;
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/Raleway/Raleway-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/Raleway/Raleway-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Raleway/Raleway-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: Raleway;
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/Raleway/Raleway-Light.woff') format('woff');
+}
+
+header{
+    grid-area: header;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+aside{
+    grid-area: aside;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid rgba(0, 0, 0, 0.12);    
+    padding: 32px;
+}
+
+main{
+    grid-area: main;
+}
+
+.wrapper__header {
+ display: flex;
+ column-gap: 6.23px;   
+}
+.tittle-logo {
+    color: var(--color_gray);
+    font-size: 21px;
+		font-family: "Raleway";
+		font-weight: 700;
+}
