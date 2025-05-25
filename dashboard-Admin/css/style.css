@@ -13,7 +13,9 @@ body{
     grid-template-areas: "aside header" "aside main";
     background-color: var(--color_light_gray);
 }
-
+.helper_class {
+    margin-bottom:  20px;
+}
 /* colors light */
 :root{
     --color_white:#fff;
@@ -471,6 +473,7 @@ header .user_info .full_name_user{
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+
 }
 .filter_buy_bitcoin{
     padding: 5px 7px;
@@ -484,4 +487,14 @@ header .user_info .full_name_user{
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+}
+.max_bitcion {
+    background-color: var(--color_light_purple);
+    padding: 2px 8px ; 
+    border-radius: 20px;
+
+}
+.price_buy_bitcoin {
+    display: flex;
+    column-gap: 28px;
 }
