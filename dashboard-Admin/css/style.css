@@ -390,3 +390,14 @@ header .user_info .full_name_user{
     color: var(--color_black);
     border: none;
 }
+.header_operation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.left_header {
+
+}
