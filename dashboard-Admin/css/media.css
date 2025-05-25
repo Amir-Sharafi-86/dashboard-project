@@ -1,0 +1,11 @@
+@media (max-width:999px) {
+  body {
+    grid-template-areas: "header header" "main main";
+  }
+  aside , .search_box_header , .title_header , .full_name_user {
+    display: none;
+  }
+  .toggle-Show_aside {
+    display: block;
+  }
+}

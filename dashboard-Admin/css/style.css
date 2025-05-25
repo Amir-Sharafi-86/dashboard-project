@@ -12,6 +12,7 @@ body{
     grid-auto-rows: 100px 100vh;
     grid-template-areas: "aside header" "aside main";
     background-color: var(--color_light_gray);
+    
 }
 
 /* colors light */
@@ -88,6 +89,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 28px;
+    gap: 10px;
 }
 aside{
     /* background-color: #3A6FF8; */
@@ -225,7 +227,7 @@ aside .logo span{
 }
 .user_action {
     display: flex;
-     align-items: center;
+    align-items: center;
 }
 .message_user button {
     margin-right: 30px;
@@ -233,4 +235,16 @@ aside .logo span{
     border: none;
     background-color: white;
     border-radius: 5px;
+}
+
+.wrapper-userinfos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+}
+.toggle-Show_aside {
+    display: none;
+    
 }
