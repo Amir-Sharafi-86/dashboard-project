@@ -13,9 +13,7 @@ body{
     grid-template-areas: "aside header" "aside main";
     background-color: var(--color_light_gray);
 }
-.helper_class {
-    margin-bottom:  20px;
-}
+
 /* colors light */
 :root{
     --color_white:#fff;
@@ -27,8 +25,11 @@ body{
     --color_light_purple:#8C77ED;
     --color_blue:#3A6FF8;
     --color_green:#1ECB4F;
+    --color_50AF95:#50AF95;
     --color_light_red:#F46D22;
     --color_353E4D:#353E4D;
+    --color_F5B300:#F5B300;
+    --color_1E2A41:#1E2A41;
 }
 
 
@@ -452,20 +453,25 @@ header .user_info .full_name_user{
 .operation_buy_bitcoin{
     display: flex;
     margin-top: 22px;
+    gap: 24px;
 }
 .row_operation_buy{
     width: 78%;
 }
+.info_bitcoin_operation{
+    margin-bottom: 22px;
+}
 .info_bitcoin_operation h5{
     color: var(--color_black);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1.4px;
     margin-bottom: 6px;
 }
 .section_info_bitcoin{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--color_light_gray);
     padding:  8px;
     border-radius: 8px;
@@ -473,7 +479,6 @@ header .user_info .full_name_user{
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-
 }
 .filter_buy_bitcoin{
     padding: 5px 7px;
@@ -488,36 +493,62 @@ header .user_info .full_name_user{
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
-.max_bitcion {
-    background-color: var(--color_light_purple);
-    padding: 2px 8px ; 
-    border-radius: 20px;
-    font-size: 10px;
+.filter_buy_bitcoin .icon_filter{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.filter_buy_bitcoin span{
     color: var(--color_gray);
-    font-family: "Raleway";
+    font-size: 14px;
     font-weight: 700;
 }
-.price_buy_bitcoin {
-    align-items: center;
+.price_buy_bitcoin{
     display: flex;
-    justify-content: center;
+    gap: 1.8rem;
+    align-items: center;
+}
+.price_buy_bitcoin span:first-child{
+    color: var(--color_gray);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.56px;
 }
 
-.Buy_Bitcoin { 
-    background-color: #1E2A41;
+.price_buy_bitcoin span:last-child{
+    background-color: var(--color_light_purple);
+    padding: 5px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.bg_color_50AF95{
+    background-color: var(--color_50AF95);
+}
+.bg_color_F5B300{
+    background-color: var(--color_F5B300);
+}
+.btn_operation_buy{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;   
-    border: 1px solid #1E2A41;
+    width:22%;
     color: var(--color_white);
     font-size: 18px;
-    font-family: "Raleway";
     font-weight: 500;
-    padding: 43.5px 28px;
+    letter-spacing: 0.72px;
+    border: 1px solid var(--color_1E2A41);
+    background-color: var(--color_1E2A41);
     border-radius: 10px;
-    margin-left: 24px;
-    margin-top: 27px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
