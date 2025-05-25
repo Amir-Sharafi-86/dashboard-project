@@ -4,6 +4,7 @@
 let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
+let linkBtn  = document.querySelectorAll(".link_btn")
 
 burger_menu.addEventListener('click', e => {
   console.log('click')
@@ -16,8 +17,21 @@ bg_cover.addEventListener('click', e => {
   bg_cover.classList.remove('d_block')
 })
 
+linkBtn.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const currentActive = document.querySelector(".active_link_sidbar");
+    if (currentActive) {
+      currentActive.classList.remove("active_link_sidbar");
+    }
+    btn.classList.add("active_link_sidbar");
+  });
+});
 
 
+
+
+
+//? chart js libraray
 var options = {
   chart: {
     type: 'area',
