@@ -492,9 +492,16 @@ header .user_info .full_name_user{
     background-color: var(--color_light_purple);
     padding: 2px 8px ; 
     border-radius: 20px;
-
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color_gray);
+    font-family: "Raleway";
+    font-weight: 700;
 }
 .price_buy_bitcoin {
+
     display: flex;
     column-gap: 28px;
 }
