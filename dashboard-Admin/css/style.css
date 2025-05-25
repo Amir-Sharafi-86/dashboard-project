@@ -84,6 +84,11 @@ ul{
 .box_shadow{
     background-color: var(--color_white);
 }
+.active__btn {
+    padding: 5px 13px;
+    background-color: var(--color_white);
+    border-radius: 5px;
+}
 header{
     /* background-color: #1ECB4F; */
     grid-area: header;
@@ -398,6 +403,40 @@ header .user_info .full_name_user{
     padding: 30px;
     border-radius: 20px;
 }
+.left_header  h2{
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color_gray);
+}
 .left_header {
-
+    display: flex;
+    align-items: center;
+}
+.wrapper-btn {
+    margin-left: 21px;
+    background-color: var(--color_light_gray);
+    padding: 5px 10px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.wrapper-btn #sell {
+    margin:  0 9px;
+}
+.wrapper-btn button {
+    border: none;
+    font-size: 14px;
+    font-family: "Raleway" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color_gray);
+}
+.btc {
+    color: var(--color_black);
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 14px;
 }
