@@ -12,7 +12,6 @@ body{
     grid-auto-rows: 100px 100vh;
     grid-template-areas: "aside header" "aside main";
     background-color: var(--color_light_gray);
-    
 }
 
 /* colors light */
@@ -20,6 +19,7 @@ body{
     --color_white:#fff;
     --color_black:#1A2029;
     --color_gray:#14161D;
+    --color_gray-300:#D1D5DB;
     --color_light_gray:#F8F8F8;
     --color_dark_gray:#31353F;
     --color_light_purple:#8C77ED;
@@ -90,6 +90,7 @@ header{
     justify-content: space-between;
     padding: 28px;
     gap: 10px;
+
 }
 aside{
     /* background-color: #3A6FF8; */
@@ -185,14 +186,17 @@ aside .logo span{
     font-size: 32px;
     font-weight: 700;
 }
-
-.search_box_header {
+.search_box_header{
     width: 52%;
     height: 44px;
     background-color: var(--color_white);
     border-radius: 8px;
     padding: 0 20px;
     position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .search_box_header input{
     width: 100%;
@@ -200,51 +204,72 @@ aside .logo span{
     border: none;
     background-color: transparent;
     font-size: 14px;
-    font-weight: 500;
-
+    font-weight: 400;
 }
 .search_box_header button{
     position: absolute;
     right: 20px;
-    top: 20%;
-    border: none;
+    top: 22%;
     background-color: transparent;
-
-}
-.search_box_header input:focus {
-    outline: none;
-}
-.user_info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   column-gap: 15px;
-}
-.full_name_user {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-}
-.user_action {
-    display: flex;
-    align-items: center;
-}
-.message_user button {
-    margin-right: 30px;
-    padding: 10px;
     border: none;
-    background-color: white;
-    border-radius: 5px;
 }
-
-.wrapper-userinfos {
+header .user_action{
+    display: flex;
     align-items: center;
+    gap: 2.5rem;
+}
+header .user_action .message_user button{
+    background-color: var(--color_white);
+    border: none;
+    padding: 10px;
+    
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+header .user_info{
+    display: flex;
+    gap: 15px;
+}
+header .user_info .full_name_user{
+    margin-top: 5px;
+    cursor: pointer;
+}
+.full_name_user span:last-child{
+    position: relative;
+    top: 5px;
+}
+.burger_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 2px solid var(--color_gray-300);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.search_box_main{
     display: flex;
     justify-content: center;
-    position: fixed;
-    right: 25px;
+    margin-top: 1rem;
 }
-.toggle-Show_aside {
+.search_box_main form{
+    width: 90%;
+}
+
+.d_block{
+    display: block !important;
+}
+.bg_cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.1);
+    position: fixed;
     display: none;
-    
+
 }
