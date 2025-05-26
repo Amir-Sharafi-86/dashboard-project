@@ -661,3 +661,13 @@ header .user_info .full_name_user{
     font-size: 14px;
     color: var(--color_gray);
 }
+.right_header_portfolio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.right_header_portfolio span {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 12px;
+}
