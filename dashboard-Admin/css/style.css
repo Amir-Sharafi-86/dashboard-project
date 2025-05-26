@@ -283,6 +283,7 @@ header .user_info .full_name_user{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.9rem;
+    padding: 1.5rem;
    
 }
 .header_letf_content_main span{
@@ -459,7 +460,7 @@ header .user_info .full_name_user{
 .row_operation_buy{
     width: 78%;
 }
-.info_bitcoin_operation{
+.info_bitcoin_operation:not(:last-child){
     margin-bottom: 22px;
 }
 .info_bitcoin_operation h5{
@@ -617,57 +618,47 @@ header .user_info .full_name_user{
 .color_F46D22{
     color: var(--color_light_red);
 }
-.section_portfolio {
+.section_portfolio{
     margin-top: 30px;
-    padding: 1.5rem;
+    padding: 24px;
 }
-.section_portfolio  h1 {
-    font-family: "Raleway";
-    font-weight: 700;
+.section_portfolio h5{
     color: var(--color_gray);
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: 700;
     margin-bottom: 30px;
 }
-.sectin_header_portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.row_portfolio:not(:last-child){
+    margin-bottom: 30px;
 }
-.left_header_portfolio {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
+.info_row_portfolio{
+    gap: 20px;
 }
-.info_portfolio {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 7px;
-}
-.logo_portfolio {
-    background-color: var(--color_light_gray);
-    padding: 10px;
-    border-radius: 8px;
-}
-.info_portfolio span {
-    font-family: "Raleway";
+.text_portfolio h6{
+    color: var(--color_gray);
+    font-size: 16px;
     font-weight: 600;
-    font-size: 1rem;
-    color: var(--color_gray);
+    margin-bottom: 7px;
 }
-.info_portfolio h6 {
-    font-family: "Raleway";
-    font-weight: 400;
+.text_portfolio span{
+    color: var(--color_gray);
     font-size: 14px;
-    color: var(--color_gray);
+    font-weight: 400;
+    opacity: 0.6;
 }
-.right_header_portfolio {
-    display: flex;
+.flex_dir_column{
     flex-direction: column;
-    row-gap: 4px;
 }
-.right_header_portfolio span {
-    font-family: "Raleway";
-    font-weight: 500;
+.action_row_portfolio span:first-child{
     font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.action_row_portfolio span:last-child{
+    color: var(--color_gray);
+    font-size: 14px;
+    font-weight: 600;
+}
+.align_items_end{
+    align-items: end;
 }
