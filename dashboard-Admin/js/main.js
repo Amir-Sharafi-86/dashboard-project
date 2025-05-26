@@ -4,7 +4,8 @@
 let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
-
+let toggleNotification = document.querySelector(".message_user")
+let menu = document.querySelector(".menu")
 burger_menu.addEventListener('click', e => {
   console.log('click')
   sidbar.classList.add('d_block')
@@ -16,6 +17,10 @@ bg_cover.addEventListener('click', e => {
   bg_cover.classList.remove('d_block')
 })
 
+
+toggleNotification.addEventListener("click" , () =>{
+   menu.classList.toggle("hide_menu")
+})
 
 
 var options = {
