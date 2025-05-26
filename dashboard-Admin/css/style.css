@@ -282,6 +282,7 @@ header .user_info .full_name_user{
 .container_main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 1.9rem;
    
 }
 .header_letf_content_main span{
@@ -552,22 +553,111 @@ header .user_info .full_name_user{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.section_coin {
+.section_coins{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 1.9rem;
 }
-.header-cart {
+.card_coin{
+    padding: 32px 19px;
+}
+.d_flex{
     display: flex;
+}
+.justify_content_between{
     justify-content: space-between;
+}
+
+.align_items_center{
     align-items: center;
 }
-.left_header {
+
+.header_card_coin{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+.left_header_card_coin{
+    gap: 19px;
+}
+.text_header_card_coin h6{
+    color: var(--color_gray);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.text_header_card_coin span{
+    color: var(--color_gray);
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+.right_header_card_coin svg{
+    position: relative;
+    top: -7px;
+}
+.body_card_coin {
+    margin-top: 20px;
+    gap: 1.5rem;
+}
+.left_body_card_coin h5{
+    color: var(--color_gray);
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+.left_body_card_coin span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.color_1ECB4F{
+    color: var(--color_green);
+}
+.color_F46D22{
+    color: var(--color_light_red);
+}
+.section_portfolio {
+    margin-top: 30px;
+    padding: 1.5rem;
+}
+.section_portfolio  h1 {
+    font-family: "Raleway";
+    font-weight: 700;
+    color: var(--color_gray);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.sectin_header_portfolio {
     display: flex;
     align-items: center;
-    column-gap: 19px;
+    justify-content: space-between;
 }
-.info_coin {
+.left_header_portfolio {
     display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.info_portfolio {
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 7px;
+}
+.logo_portfolio {
+    background-color: var(--color_light_gray);
+    padding: 10px;
+    border-radius: 8px;
+}
+.info_portfolio span {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color_gray);
+}
+.info_portfolio h6 {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color_gray);
 }
