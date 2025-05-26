@@ -552,3 +552,22 @@ header .user_info .full_name_user{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.section_coin {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.header-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_header {
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+}
+.info_coin {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
