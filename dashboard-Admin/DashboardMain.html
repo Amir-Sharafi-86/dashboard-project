@@ -209,7 +209,7 @@
         </form>
         <div class="user_action">
             <div class="message_user">
-                <button class="box_shadow">
+                <button class="box_shadow" id="btn_notification">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
                             d="M12.02 20.53C9.68999 20.53 7.35999 20.16 5.14999 19.42C4.30999 19.13 3.66999 18.54 3.38999 17.77C3.09999 17 3.19999 16.15 3.65999 15.39L4.80999 13.48C5.04999 13.08 5.26999 12.28 5.26999 11.81V8.91998C5.26999 5.19998 8.29999 2.16998 12.02 2.16998C15.74 2.16998 18.77 5.19998 18.77 8.91998V11.81C18.77 12.27 18.99 13.08 19.23 13.49L20.37 15.39C20.8 16.11 20.88 16.98 20.59 17.77C20.3 18.56 19.67 19.16 18.88 19.42C16.68 20.16 14.35 20.53 12.02 20.53ZM12.02 3.66998C9.12999 3.66998 6.76999 6.01998 6.76999 8.91998V11.81C6.76999 12.54 6.46999 13.62 6.09999 14.25L4.94999 16.16C4.72999 16.53 4.66999 16.92 4.79999 17.25C4.91999 17.59 5.21999 17.85 5.62999 17.99C9.80999 19.39 14.24 19.39 18.42 17.99C18.78 17.87 19.06 17.6 19.19 17.24C19.32 16.88 19.29 16.49 19.09 16.16L17.94 14.25C17.56 13.6 17.27 12.53 17.27 11.8V8.91998C17.27 6.01998 14.92 3.66998 12.02 3.66998Z"
@@ -223,19 +223,11 @@
                         <circle cx="17" cy="5" r="2.5" fill="#F46D22" stroke="#E6EFFE" />
                     </svg>
                 </button>
-                <ul class="menu  box_shadow hide_menu ">
-                    <li class="item_menu">
-                        <a href="" class="item_menu__link" >Dropdown</a>
-                    </li>
-                    <li class="item_menu">
-                        <a href="" class="item_menu__link" >Dropdown</a>
-                    </li>
-                    <li class="item_menu">
-                        <a href="" class="item_menu__link" >Dropdown</a>
-                    </li>
-                    <li class="item_menu">
-                        <a href="" class="item_menu__link" >Dropdown</a>
-                    </li>
+                <ul class="box_shadow  message_list_user" id="list_notification">
+                    <li><a href="#">message</a></li>
+                    <li><a href="#">message</a></li>
+                    <li><a href="#">message</a></li>
+                    <li><a href="#">message</a></li>
                 </ul>
             </div>
             <div class="user_info">
@@ -251,6 +243,38 @@
                                 fill="#9E9E9E" />
                         </svg>
                     </span>
+                </div>
+                <div class="list_account_user box_shadow ">
+                    <form class="search_user">
+                        <input type="text" placeholder="Search...">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
+                                <path d="M16.4115 15.349H15.5885L15.2969 15.0677C16.3177 13.8802 16.9323 12.3385 16.9323 10.6615C16.9323 6.92187 13.901 3.89062 10.1615 3.89062C6.42187 3.89062 3.39062 6.92187 3.39062 10.6615C3.39062 14.401 6.42187 17.4323 10.1615 17.4323C11.8385 17.4323 13.3802 16.8177 14.5677 15.7969L14.849 16.0885V16.9115L20.0573 22.1094L21.6094 20.5573L16.4115 15.349ZM10.1615 15.349C7.56771 15.349 5.47396 13.2552 5.47396 10.6615C5.47396 8.06771 7.56771 5.97396 10.1615 5.97396C12.7552 5.97396 14.849 8.06771 14.849 10.6615C14.849 13.2552 12.7552 15.349 10.1615 15.349Z" fill="#B6BFC8"/>
+                              </svg>
+                        </button>
+                    </form>
+                    <div class="container_account">
+                        <div class="account_user d_flex">
+                            <input type="checkbox" name="" id="">
+                            <div class="info_user_account d_flex align_items_center">
+                                <img src="img/Photo.png" alt="">
+                                <div class="account_text_user">
+                                    <h6>Nat</h6>
+                                    <span>nat@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account_user d_flex">
+                            <input type="checkbox" name="" id="">
+                            <div class="info_user_account d_flex align_items_center">
+                                <img src="img/Photo.png" alt="">
+                                <div class="account_text_user">
+                                    <h6>Nat</h6>
+                                    <span>nat@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

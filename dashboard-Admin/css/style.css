@@ -30,6 +30,7 @@ body{
     --color_353E4D:#353E4D;
     --color_F5B300:#F5B300;
     --color_1E2A41:#1E2A41;
+    --color_B6BFC8:#B6BFC8;
 }
 
 
@@ -125,31 +126,6 @@ aside .logo{
 aside .logo span{
     font-size: 21px;
     font-weight: 700;
-}
-
-.hide_menu{
-    visibility: hidden;
-    opacity: 0;
-    transition:  all 250ms ease-in-out;
-}
-.menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    width: 140px;
-    position: absolute;
-    top: 98px;
-    border-radius: 10px;
-}
-.menu li {
-    padding: 10px;
-  
-}
-.menu li a {
-    color: #424242;
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 14px;
 }
 .navgation_sidbar{
     margin-top: 2.7rem;
@@ -253,7 +229,7 @@ header .user_action{
 header .user_action .message_user button{
     border: none;
     padding: 10px;
-    position: relative;
+    
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -688,4 +664,108 @@ header .user_info .full_name_user{
 }
 .align_items_end{
     align-items: end;
+}
+.message_list_user {
+    width: 150px;
+    z-index: 100;
+    position: absolute;
+    top: 96px;
+    right: 185px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all ease-in-out 250ms;
+    box-shadow: 5px 5px 20px 0 rgba(218, 188, 255, 0.20);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all ease-in-out 250ms;
+    -moz-transition: all ease-in-out 250ms;
+    -ms-transition: all ease-in-out 250ms;
+    -o-transition: all ease-in-out 250ms;
+}
+.message_list_user.active_notif{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+.message_list_user li{
+    padding: 10px;
+}
+.list_account_user {
+    position: absolute;
+    z-index: 100;
+    top: 95px;
+    right: 15px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all ease-in-out 250ms;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    -webkit-transition: all ease-in-out 250ms;
+    -moz-transition: all ease-in-out 250ms;
+    -ms-transition: all ease-in-out 250ms;
+    -o-transition: all ease-in-out 250ms;
+}
+.list_account_user.active_account{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+.search_user{
+    position: relative;
+    height: 50px;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color_light_gray);
+    
+}
+.search_user input{
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color_B6BFC8);
+}
+.search_user input,.search_user button{
+    border: none;
+    background-color: transparent;
+}
+.search_user button{
+    position: absolute;
+    left: 6px;
+}
+.account_user{
+    padding: 10px 20px;
+}
+.account_user,.info_user_account{
+    gap: 10px;
+}
+.info_user_account img,.img_user_info img{
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.account_text_user h6{
+    color: var(--color_gray);
+    font-size: 17px;
+    font-weight: 500;
+}
+.account_text_user span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color_black);
+    opacity: 0.6;
 }

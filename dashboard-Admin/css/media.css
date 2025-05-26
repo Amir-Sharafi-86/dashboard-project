@@ -7,7 +7,7 @@
     body{
         grid-template-areas:"header header""main main";
     }
-    aside,.title_header,header .search_box_header,.full_name_user{
+    aside,.title_header,header .search_box_header,.full_name_user span:first-child{
         display: none;
     }
     header{
@@ -23,6 +23,9 @@
     }
     .container_main{
         grid-template-columns: repeat(1,1fr);   
+    }
+    .message_list_user{
+        right: 55px;
     }
 }
 

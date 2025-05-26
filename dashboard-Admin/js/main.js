@@ -4,8 +4,11 @@
 let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
-let toggleNotification = document.querySelector(".message_user")
-let menu = document.querySelector(".menu")
+let btn_notification = document.querySelector('#btn_notification')
+let list_notification = document.querySelector('#list_notification')
+let full_name_user = document.querySelector('.full_name_user')
+let list_account_user  = document.querySelector('.list_account_user ')
+
 burger_menu.addEventListener('click', e => {
   console.log('click')
   sidbar.classList.add('d_block')
@@ -17,9 +20,26 @@ bg_cover.addEventListener('click', e => {
   bg_cover.classList.remove('d_block')
 })
 
+btn_notification.addEventListener('click',event =>{
+  console.log(event.target)
+  console.log(list_notification.classList.contains('active_notif'))
+  if(list_notification.classList.contains('active_notif')){
+    list_notification.classList.remove('active_notif')
+  }
+  else{
+    list_notification.classList.add('active_notif')
 
-toggleNotification.addEventListener("click" , () =>{
-   menu.classList.toggle("hide_menu")
+  }
+})
+
+full_name_user.addEventListener('click',e =>{
+
+  if(list_account_user.classList.contains('active_account')){
+    list_account_user.classList.remove('active_account')
+  }
+  else{
+    list_account_user.classList.add('active_account')
+  }
 })
 
 
