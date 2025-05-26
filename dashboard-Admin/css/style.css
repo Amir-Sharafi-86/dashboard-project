@@ -112,7 +112,7 @@ aside{
 main{
     /* background-color: #F46D22; */
     grid-area: main;
-    padding: 30px;
+    padding: 8px;
 }
 
 
@@ -265,7 +265,8 @@ header .user_info .full_name_user{
     margin-top: 1rem;
 }
 .search_box_main form{
-    width: 90%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .d_block{
@@ -283,7 +284,7 @@ header .user_info .full_name_user{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.9rem;
-    padding: 1.5rem;
+    padding-bottom: 0.5rem;
    
 }
 .header_letf_content_main span{
@@ -556,7 +557,8 @@ header .user_info .full_name_user{
 }
 .section_coins{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
     gap: 1.9rem;
 }
 .card_coin{

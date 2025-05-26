@@ -1,3 +1,8 @@
+@media (max-width:1200px){
+    .operation_section{
+        padding: 10px;
+    }
+}
 @media (max-width:999px){
     body{
         grid-template-areas:"header header""main main";
@@ -15,6 +20,9 @@
         width: 68%;
         z-index: 999;
         background-color: var(--color_white);
+    }
+    .container_main{
+        grid-template-columns: repeat(1,1fr);   
     }
 }
 
