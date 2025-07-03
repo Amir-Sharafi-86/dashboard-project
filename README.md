@@ -19,5 +19,3 @@ This project is generated using standard coding practices and features a basic d
 - Editor  
 - SweetAlert
 
-## Live Demo
-You can check the live demo of the project here: [View Demo](https:/Amir-Sharafi-86.github.io/dashboard-project/)
